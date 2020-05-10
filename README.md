@@ -1,24 +1,19 @@
-# README
+# Rails learning
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project is my attempt to learn Ruby on Rails. I have mostly been following the tutorial [here](https://guides.rubyonrails.org/getting_started.html)
 
-Things you may want to cover:
+## Documentation / resources
+  * [Getting Started with Rails](https://guides.rubyonrails.org/getting_started.html)
+  * [Getting Started on Heroku with Rails 6.x](https://devcenter.heroku.com/articles/getting-started-with-rails6)
+  * [Ruby track on Exercism](https://exercism.io/tracks/ruby)
+  * [Learn Ruby in Y minutes](https://learnxinyminutes.com/docs/ruby/)
+  * [Rubocop Ruby style guide](https://github.com/rubocop-hq/ruby-style-guide)
+  * [YARD documentation](https://rubydoc.info/gems/yard/file/docs/GettingStarted.md)
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Backlog
+  * Switch DB to Postgres
+  * Deploy to Heroku
+  * Add CI to repo
+  * Style pass
+  * Add tests / make tests pass
+  * Remove stuff that isn't relevant (e.g. Mailer stuff ??)
