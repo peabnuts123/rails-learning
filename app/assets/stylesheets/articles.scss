@@ -1,9 +1,7 @@
 // ========================
 // Article
 // ========================
-// @note:
-// ========================
-.article {
+.article-tile {
   padding: $spacer / 2;
 
   .card {
@@ -14,6 +12,15 @@
 // ========================
 // ELEMENTS
 // ========================
+.article-form__text {
+  textarea {
+    min-height: 300px;
+  }
+}
+
+.article__body {
+  white-space: pre-line;
+}
 
 // ========================
 // MODIFIERS

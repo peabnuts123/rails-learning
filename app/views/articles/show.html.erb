@@ -1,11 +1,22 @@
-<%= link_to 'Back', articles_path, { class: 'btn btn-light mb-3' } %>
+<%= link_to 'Back', articles_path, { class: 'btn btn-outline-primary mb-3' } %>
 
-<div class="mb-3">
-  <h1><%= @article.title %></h1>
-  <p><%= @article.text %></p>
+<div class="article mb-3">
+  <h1 class="article__title"><%= @article.title %></h1>
 
-  <%= link_to "Edit", edit_article_path(@article), { class: 'btn btn-primary' } %>
-  <%= link_to 'Destroy', article_path(@article), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %>
+  <div class="article__post-time text-secondary mb-3">
+    Posted
+    <time datetime="<%= @article.created_at %>">
+      <%= localize(@article.created_at, format: :short) %>
+    </time>
+  </div>
+
+  <div class="article__controls btn-group mb-3" role="group">
+    <%= link_to "Edit", edit_article_path(@article), { class: 'btn btn-sm btn-primary' } %>
+    <%= link_to 'Destroy', article_path(@article), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-sm btn-danger' %>
+  </div>
+
+
+  <p class="article__body"><%= @article.text %></p>
 </div>
 
 <div class="mb-3">
@@ -17,9 +28,8 @@
   <%= render @article.comments %>
 </div>
 
-
 <div class="mb-3">
-  <h2>Add a comment:</h2>
+  <h2>Add a comment</h2>
 
   <%= render 'comments/form' %>
 </div>

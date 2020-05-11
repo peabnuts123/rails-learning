@@ -14,7 +14,6 @@ This project is my attempt to learn Ruby on Rails. I have mostly been following 
   * Switch DB to Postgres
   * Deploy to Heroku
   * Add CI to repo
-  * Style pass
   * Add tests / make tests pass
   * Remove stuff that isn't relevant (e.g. Mailer stuff ??)
   * Put validation on comment posting
@@ -22,3 +21,5 @@ This project is my attempt to learn Ruby on Rails. I have mostly been following 
   * Document how this all hangs together
   * What's the expected way of passing data into a partial?
   * How do forms know where to POST their data to?
+  * Add JSON views
+  * Edit comments
