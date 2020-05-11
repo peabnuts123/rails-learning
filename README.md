@@ -1,6 +1,6 @@
 # Rails learning
 
-This project is my attempt to learn Ruby on Rails. I have mostly been following the tutorial [here](https://guides.rubyonrails.org/getting_started.html)
+This project is my attempt to learn Ruby on Rails. I have mostly been following the tutorial [here](https://guides.rubyonrails.org/getting_started.html).
 
 ## Documentation / resources
   * [Getting Started with Rails](https://guides.rubyonrails.org/getting_started.html)
@@ -19,3 +19,6 @@ This project is my attempt to learn Ruby on Rails. I have mostly been following 
   * Remove stuff that isn't relevant (e.g. Mailer stuff ??)
   * Put validation on comment posting
   * Some kind of authorization
+  * Document how this all hangs together
+  * What's the expected way of passing data into a partial?
+  * How do forms know where to POST their data to?
