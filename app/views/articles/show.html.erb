@@ -1,7 +1,25 @@
-<%= link_to 'Back', articles_path, { class: 'btn btn-primary' } %>
+<%= link_to 'Back', articles_path, { class: 'btn btn-light mb-3' } %>
 
-<h1><%= @article.title %></h1>
-<p><%= @article.text %></p>
+<div class="mb-3">
+  <h1><%= @article.title %></h1>
+  <p><%= @article.text %></p>
 
-<%= link_to "Edit", edit_article_path(@article), { class: 'btn btn-primary' } %>
-<%= link_to 'Destroy', article_path(@article), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %>
+  <%= link_to "Edit", edit_article_path(@article), { class: 'btn btn-primary' } %>
+  <%= link_to 'Destroy', article_path(@article), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %>
+</div>
+
+<div class="mb-3">
+  <h2>Comments (<%= @article.comments.length %>)</h2>
+  <% if @article.comments.length == 0 %>
+    <em>This article has no comments.</em>
+  <% end %>
+
+  <%= render @article.comments %>
+</div>
+
+
+<div class="mb-3">
+  <h2>Add a comment:</h2>
+
+  <%= render 'comments/form' %>
+</div>

@@ -1,0 +1,20 @@
+<div class="card mb-2">
+  <div class="card-body">
+    <div class="card-title">
+      <span class="font-weight-bold"><%= comment.commenter %></span>
+      <span class="text-right text-secondary pl-2">
+        <time datetime="<%= comment.created_at %>">
+          <%= localize(comment.created_at, format: :short) %>
+        </time>
+      </span>
+    </div>
+    <p class="card-text"><%= comment.body %></p>
+    <div>
+      <%= link_to 'Delete', [comment.article, comment],
+               method: :delete,
+               data: { confirm: 'Are you sure?' },
+               class: 'btn btn-sm btn-danger'
+      %>
+    </div>
+  </div>
+</div>
