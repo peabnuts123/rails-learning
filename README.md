@@ -17,3 +17,5 @@ This project is my attempt to learn Ruby on Rails. I have mostly been following 
   * Style pass
   * Add tests / make tests pass
   * Remove stuff that isn't relevant (e.g. Mailer stuff ??)
+  * Put validation on comment posting
+  * Some kind of authorization
