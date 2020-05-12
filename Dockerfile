@@ -8,8 +8,6 @@ RUN apk --update add --no-cache \
   nodejs npm \
   # Compilation
   build-base \
-  # Headers for sqlite (needed for sqlite gem)
-  sqlite-dev \
   # Headers for postgresql (needed for postgres gem)
   postgresql-dev
 
