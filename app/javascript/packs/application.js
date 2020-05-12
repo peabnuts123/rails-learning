@@ -18,5 +18,11 @@ require("channels")
 
 import $ from 'jquery';
 import 'bootstrap';
+import feather from 'feather-icons';
 
-console.log(`jquery`, $().jquery);
+
+// Wait for DOM to finish loading (managed by turbolinks)
+$(document).on('turbolinks:load', () => {
+  // Replace `data-feather` elements with SVG representations
+  feather.replace();
+});

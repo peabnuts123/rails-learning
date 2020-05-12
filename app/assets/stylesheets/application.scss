@@ -17,6 +17,7 @@
  @import "comments";
  @import "welcome";
 
+// Rails error class integration with bootstrap
 .field_with_errors {
   label {
     @extend .text-danger;
@@ -25,4 +26,10 @@
   .form-control {
     @extend .is-invalid;
   }
+}
+
+// Feather icons sensitive to small bootstrap buttons
+.btn-sm svg.feather {
+  width: 20px;
+  height: 20px;
 }

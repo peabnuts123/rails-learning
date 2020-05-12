@@ -1,4 +1,6 @@
-<%= link_to 'Back', articles_path, { class: 'btn btn-outline-primary mb-3' } %>
+<%= link_to(articles_path, { class: 'btn btn-outline-primary mb-3' }) do
+  feather_icon('arrow-left') + ' Back'
+end %>
 
 <h1>New Article</h1>
 

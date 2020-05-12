@@ -1,6 +1,8 @@
-<%= link_to 'Back', articles_path, { class: 'btn btn-outline-primary mb-3' } %>
+<%= link_to(articles_path, { class: 'btn btn-outline-primary mb-3' }) do
+  feather_icon('arrow-left') + ' Back'
+end %>
 
-<div class="article mb-3">
+<div class="article mb-5">
   <h1 class="article__title"><%= @article.title %></h1>
 
   <div class="article__post-time text-secondary mb-3">
@@ -11,8 +13,12 @@
   </div>
 
   <div class="article__controls btn-group mb-3" role="group">
-    <%= link_to "Edit", edit_article_path(@article), { class: 'btn btn-sm btn-primary' } %>
-    <%= link_to 'Destroy', article_path(@article), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-sm btn-danger' %>
+    <%= link_to edit_article_path(@article), { class: 'btn btn-sm btn-primary' } do
+      feather_icon('edit') + ' Edit'
+    end %>
+    <%= link_to article_path(@article), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-sm btn-danger' do
+      feather_icon('trash-2') + " Delete"
+    end %>
   </div>
 
 
