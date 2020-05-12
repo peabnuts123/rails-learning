@@ -11,7 +11,6 @@ This project is my attempt to learn Ruby on Rails. I have mostly been following 
   * [YARD documentation](https://rubydoc.info/gems/yard/file/docs/GettingStarted.md)
 
 ## Backlog
-  * Switch DB to Postgres
   * Deploy to Heroku
   * Add CI to repo
   * Add tests / make tests pass
