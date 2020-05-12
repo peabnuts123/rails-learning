@@ -1,0 +1,22 @@
+version: '3.7'
+
+services:
+  db:
+    image: 'postgres:alpine'
+    container_name: 'rails-learning_db'
+    restart: unless-stopped
+    ports:
+      - '5432:5432'
+    volumes:
+      # Data directory
+      - './db/data:/var/lib/postgresql/data'
+
+  app:
+    build: .
+    container_name: 'rails-learning'
+    restart: unless-stopped
+    ports:
+      - '3000:3000'
+    volumes:
+      # Source code
+      - './:/usr/src/app'
